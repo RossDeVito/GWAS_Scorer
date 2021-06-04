@@ -1,7 +1,7 @@
 # GWAS_Scorer
 Python functions and command line tools for easily scoring samples using PRS from the NHGRI-EBI GWAS Catalog or other similarly formatted data. Additionallly provides a tool for calculating the fixation indices between all populations. Before samples can be scored or fixation indices calculated, the genotype data must be preprocessed from .vcf or .vcf.gz to HDF5.
 
-Preprocessed data and 58 scores for the 1000 Genomes samples are available [here](https://drive.google.com/file/d/1U9N3YqD5n47g_3i8Gjwe0TKunjw1eFhi/view?usp=sharing). To use, unzip in data directory. The report using this data is [here]().
+Preprocessed data and 58 scores for the 1000 Genomes samples are available [here](https://drive.google.com/file/d/1U9N3YqD5n47g_3i8Gjwe0TKunjw1eFhi/view?usp=sharing). To use, unzip in data directory. The report using this data is [here](https://github.com/RossDeVito/GWAS_Scorer/blob/main/Population_Effects_in_GWAS_Based_Risk_Scores%20(3)%20(1).pdf).
 
 ## 1. Preprocess Data
 The samples' genotype data can originally be in .vcf or .vcf.gz format, with one chromosome per file. To improve runtime and use less memory when actually scoring samples or calculating fixation indices, these other functions use HDF5 files which are created and stored by this function.
